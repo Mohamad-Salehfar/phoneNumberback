@@ -115,8 +115,8 @@ class userAuthController extends Controller {
         template: "registerVerify",
       },
       (response, status) => {
-        console.log(response);
-        console.log("kavenegar message status", status);
+        // console.log(response);
+        // console.log("kavenegar message status", status);
         if (response && status === 200)
           return res.status(HttpStatus.OK).send({
             statusCode: HttpStatus.OK,
